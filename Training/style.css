@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
 *{
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -15,11 +16,15 @@ h1, h2{
     justify-content: center;
 }
 
-img{
+#tentang img{
+    width: 550px;
+}
+
+#wisata ul li img{
     width: 240px;
 }
 
-img:hover{
+#wisata ul li img:hover{
     width: 250px;
     transition: all 0.2s ease;
     cursor: pointer;
