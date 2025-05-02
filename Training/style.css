@@ -3,11 +3,24 @@
 *{
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 body{
     background-color: #000;
     color: azure;
+    width: 100%;
+}
+
+.jumbotron{
+    font-size: 20px;
+    padding: 60px;
+    background-color: firebrick;
+    text-align: center;
+    color: white;
+    border-radius: 14px;
+    margin: 25px;
 }
 
 h1, h2{
@@ -15,6 +28,91 @@ h1, h2{
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+h2, h3{
+    color: lightgreen;
+}
+
+.kontainer{
+    font-size: 20px;
+    padding: 60px;
+    background-color: #a92623;
+    text-align: center;
+    color: white;
+}
+
+nav a:hover{
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+nav ul{
+    padding-inline: 4rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 14px;
+}
+
+nav ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+nav ul li:hover{
+
+}
+
+nav ul li i{
+    font-size: 35px;
+}
+
+nav ul li a{
+    display: none;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+nav{
+    background-color: #471106;
+    padding: 5px;
+    margin: 5px;
+    position: sticky;
+    top: 0;
+    border-radius: 20px;
+}
+
+main{
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+#main-content{
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+
+aside{
+    flex: 1;
+}
+
+#aside-card{
+    width: fit-content;
+    min-width: 200px;
+    max-width: 300px;
+}
+
+ul li{
+    list-style: none;
 }
 
 #tentang img{
@@ -33,4 +131,43 @@ h1, h2{
 
 #formatting p span{
     color: green;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+img{
+    max-width: 100%;
+    width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+header{
+    display: inline;
+}
+
+/* layar 1200px dan dibawahnya */
+@media screen and (max-width: 1200px) {
+    main{
+        flex-flow: column nowrap;
+    }
+
+    main aside{
+        align-self: center;
+    }
+}
+
+/* layar 768px dan dibawahnya */
+@media screen and (max-width: 768px) {
+    nav ul{
+        justify-content: center;
+    }
+
+    main aside{
+        align-self: center;
+    }
 }
