@@ -37,14 +37,9 @@ h2, h3{
 .kontainer{
     font-size: 20px;
     padding: 60px;
-    background-color: #a92623;
+    background: linear-gradient(to bottom, #a92623, #8a1111);
     text-align: center;
     color: white;
-}
-
-nav a:hover{
-    font-weight: bold;
-    transition: all 0.2s ease;
 }
 
 nav ul{
@@ -55,7 +50,7 @@ nav ul{
     padding: 14px;
 }
 
-nav ul li{
+nav ul li a{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -63,8 +58,9 @@ nav ul li{
     text-align: center;
 }
 
-nav ul li:hover{
-
+nav ul li a:hover{
+    color: aqua;
+    transition: all 0.2s ease;
 }
 
 nav ul li i{
@@ -72,7 +68,6 @@ nav ul li i{
 }
 
 nav ul li a{
-    display: none;
     font-size: 18px;
     font-weight: 400;
     text-decoration: none;
@@ -95,7 +90,8 @@ main{
 }
 
 #main-content{
-    flex: 5;
+    flex: 5
+    ;
     display: flex;
     flex-flow: column nowrap;
     gap: 1rem 2rem;
@@ -115,22 +111,25 @@ ul li{
     list-style: none;
 }
 
-#tentang img{
-    width: 550px;
+#wisata ul li{
+    margin: 20px;
+    font-weight: 500;
 }
 
-#wisata ul li img{
-    width: 240px;
+#kuliner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-#wisata ul li img:hover{
-    width: 250px;
-    transition: all 0.2s ease;
-    cursor: pointer;
+#kuliner ol{
+    list-style-position: inside;
+    text-align: left;
 }
 
-#formatting p span{
-    color: green;
+#tabel table{
+    width: 100%;
 }
 
 .card{
